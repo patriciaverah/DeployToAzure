@@ -6,7 +6,7 @@ var winnerlist = function(req, res){
             {category: 'study', year:'2014-2018', what:'Computer Science, Universidad Pública de Navarra'},
             {category: 'work', year:'2017', what:'Saleswoman in Stradivarius'},
             {category: 'work', year:'2017', what:'Saleswoman in El Corte Inglés'},
-            {category: 'work', year:'2017', what:'Software developer in GeoActios'},
+            {category: 'work', year:'2017', what:'Software developer in GeoActio (internship)'},
             {category: 'study', year:'2018', what:'Exchange semester, Laurea University of Applied Sciences'},
 
             {category: 'study', year:'unknown', what:'B2 - English'},
