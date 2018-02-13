@@ -1,6 +1,6 @@
 /* GET home page */
 var winnerlist = function(req, res){
-    res.render('football',{
+    res.render('studiesandjobs',{
         winners:
         [
             {year:'1990', team:'Germany'},

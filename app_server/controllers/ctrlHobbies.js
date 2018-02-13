@@ -1,6 +1,6 @@
 /* GET home page */
 var winnerlist = function(req, res){
-    res.render('goldenball',{
+    res.render('hobbies',{
         winners:
         [
             {year:'1990', player:'Salvatore Schillaci', team: 'Italy'},
