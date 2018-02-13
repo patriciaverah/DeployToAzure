@@ -12,7 +12,10 @@ var winnerlist = function(req, res){
             {category: 'study', year:'unknown', what:'B2 - English'},
             {category: 'study', year:'unknown', what:'A2 - German'},
             {category: 'study', year:'unknown', what:'Photography courses online and in Universidad Pública de Navarra'}
-        ]});
+        ],
+        link: 'https://www.stradivarius.com/',
+        link2: 'https://www.elcorteingles.es/',
+        link3: 'https://geoactio.com/#home'});
 };
 module.exports = {
     winnerlist
