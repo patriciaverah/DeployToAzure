@@ -8,4 +8,4 @@ block content
 
   ul
     each winner in winners
-      li= #[a(href = winner.player) winner.socialmedia]  
+      li= winner.socialmedia + ': ' + #[a(href = winner.player) click here]  
