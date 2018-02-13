@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-var ctrlFootball = require('../controllers/ctrlStudiesAndJobs');
+var ctrlStudiesAndJobs = require('../controllers/ctrlStudiesAndJobs');
 
 /* GET home page. */
-router.get('/', ctrlFootball.winnerlist);
+router.get('/', ctrlStudiesAndJobs.winnerlist);
 
 module.exports = router;

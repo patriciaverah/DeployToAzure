@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-var ctrlGoldenBall = require('../controllers/ctrlHobbies');
+var ctrlHobbies = require('../controllers/ctrlHobbies');
 
 /* GET home page. */
-router.get('/', ctrlGoldenBall.winnerlist);
+router.get('/', ctrlHobbies.winnerlist);
 
 module.exports = router;
