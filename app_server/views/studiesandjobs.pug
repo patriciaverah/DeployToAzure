@@ -2,3 +2,6 @@ extends layout
 
 block content
   h1= 'Studies and Jobs'
+  ul
+    each winner in winners
+      li= winner.year + ': ' + winner.team

@@ -1,7 +1,7 @@
 /* GET home page */
 var winnerlist = function(req, res){
     res.render('studiesandjobs',{
-        studiesandjobs:
+        winners:
         [
             {category: 'study', year:'unknown', what:'B2 - English'},
             {category: 'study', year:'unknown', what:'A2 - German'}
@@ -14,5 +14,5 @@ var winnerlist = function(req, res){
         ]});
 };
 module.exports = {
-    studiesandjobsList
+    winnerlist
 };
