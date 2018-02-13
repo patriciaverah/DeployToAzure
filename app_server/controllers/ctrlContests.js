@@ -1,6 +1,6 @@
 /* GET home page */
 var winnerlist = function(req, res){
-    res.render('studiesandjobs',{
+    res.render('contests',{
         winners:
         [
             {year: '2017', contest: 'Google Hashcode'},
