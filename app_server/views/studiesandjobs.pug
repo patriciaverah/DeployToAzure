@@ -3,5 +3,5 @@ extends layout
 block content
   h1= 'Studies and Jobs'
   ul
-    each snj in studiesandjobs
-      li= snj.year + ': ' + snj.what
+    each winner in winners
+      li= winner.category + ', ' + winner.year + ': ' + winner.what
