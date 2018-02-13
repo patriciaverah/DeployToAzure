@@ -7,3 +7,8 @@ block content
   p I'm going to show you some links where you can see my pictures:
 
   p Flickr: #[a(href = link) click here]
+
+  p I also participated in some contests:
+  ul
+    each winner in winners
+      li= winner.year + ': ' + winner.contest
