@@ -10,11 +10,16 @@ html
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
 
   body
-    a(href='/') Home
-    br
-    a(href='/studiesandjobs') Studies and jobs
-    br
-    a(href='/hobbies') Hobbies
+    nav(class="navbar")
+      button(class="navbar-button", type="button", data-toggle="collapse", data-target="navbarNavAltMarkup", aria-controls="navbarNavAltMarkup", aria-expanded="false", aria-label="Toggle navigation")
+        span(class="navbar-toggler-icon")
+
+      div(class="collapse navbar-collapse", id="navbarNavAltMarkup")
+        div(class="narbar-nav")
+          a(class="nav-item nav-link active", href='/') Home
+            span(class="sr-only")
+          a(class="nav-item nav-link", href='/studiesandjobs') Studies and jobs
+          a(class="nav-item nav-link", href='/hobbies') Hobbies
 
     block content
 
