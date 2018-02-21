@@ -10,18 +10,23 @@ html
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
 
   body
-    nav(class="navbar")
+    nav.navbar.navbar-expand-sm.bg-success.navbar-dark
       .container
-        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#' + id, aria-expanded='false', aria-controls='navbar')
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand(href='/')= Home
-      .collapse.navbar-collapse(id="navbarNavAltMarkup")
-        ul.nav.navbar-nav
+        ul.navbar-nav
+          li.nav-item
+            a.nav-item(href='/') Home
+          li.nav-item
+            a.nav-item(href='/studiesandjobs') Studies and Jobs
+          li.nav-item
+            a.nav-item(href='/hobbies') Hobbies
 
-    block content
+    .container
+      block content
+
+      footer
+        .row
+          .col-12
+            small &copy: Patricia Vera Hernández (2018) - Web App Development with MEAN
 
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", crossorigin="anonymous")
