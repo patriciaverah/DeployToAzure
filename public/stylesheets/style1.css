@@ -38,7 +38,7 @@ footer{
 
 div.col-12{
   padding: 10px 0 0 30px;
-  flex: 0 0 0;
+  flex: 0 0 50%;
   float: left;
   width: 50%;
 }
