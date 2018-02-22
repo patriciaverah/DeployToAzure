@@ -14,7 +14,7 @@ html
     nav.navbar.navbar-expand-sm.bg-info.navbar-light
       .container
         ul.navbar-nav
-          li.nav-item
+          li.nav-item1
             span.navbar-text.h3.font-weight-bold PVH.
           li.nav-item
             a.nav-item(href='/') Home
@@ -23,13 +23,13 @@ html
           li.nav-item
             a.nav-item(href='/hobbies') Hobbies
 
-    .container
+    .container.content
       block content
 
-      footer
-        .row
-          .col-12
-            small &copy: Patricia Vera Hernández (2018) - Web App Development with MEAN
+    footer.pie
+      .row
+        .col-12
+          small &copy: Patricia Vera Hernández (2018) - Web App Development with MEAN
 
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", crossorigin="anonymous")
