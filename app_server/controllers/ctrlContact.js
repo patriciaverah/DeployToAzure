@@ -1,6 +1,7 @@
 /* GET home page */
 var contact = function(req, res){
-    res.render('contact', {link: 'p.vhernandez@hotmail.com'});
+    res.render('contact', {personal-email: 'p.vhernandez@hotmail.com',
+                           uni-email: 'patricia.vera.hernandez@student.laurea.com'});
 };
 
 module.exports = {
