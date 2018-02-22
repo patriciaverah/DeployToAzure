@@ -42,3 +42,8 @@ div.col-12{
   float: left;
   width: 50%;
 }
+
+#contact{
+  width: 30%;
+  margin-top: 30px;
+}
