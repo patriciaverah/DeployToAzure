@@ -3,7 +3,7 @@ var router = express.Router();
 
 var ctrlContact = require('../controllers/ctrlContact');
 
-/* GET home page. */
+/* GET contact page. */
 router.get('/', ctrlContact.contact);
 
 module.exports = router;
