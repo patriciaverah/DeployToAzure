@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 
 require('./app_server/models/db');
 
-const index = require('./app_server/routes/index');
-const apiRoutes = require('./app_api/routes/indexApi');
+var index = require('./app_server/routes/index');
+//const apiRoutes = require('./app_api/routes/indexApi');
 var studiesandjobs = require('./app_server/routes/studiesandjobs');
 var hobbies = require('./app_server/routes/hobbies');
 var contact = require('./app_server/routes/contact');
