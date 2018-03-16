@@ -8,7 +8,6 @@ var bodyParser = require('body-parser');
 require('./app_server/models/db');
 
 var index = require('./app_server/routes/index');
-//const apiRoutes = require('./app_api/routes/indexApi');
 var studiesandjobs = require('./app_server/routes/studiesandjobs');
 var hobbies = require('./app_server/routes/hobbies');
 var contact = require('./app_server/routes/contact');
@@ -27,8 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index); // All route paths starting with / will be handled by the index
-app.use('/api', apiRoutes); // All API routes will start with /api
+app.use('/', index);
 app.use('/studiesandjobs', studiesandjobs);
 app.use('/hobbies', hobbies);
 app.use('/contact', contact);
