@@ -5,10 +5,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./app_server/routes/index');
-var studiesandjobs = require('./app_server/routes/studiesandjobs');
-var hobbies = require('./app_server/routes/hobbies');
-var contact = require('./app_server/routes/contact');
+require('./app_api/models/db');
+
+const index = require('./app_server/routes/index');
+const apiRoutes = require('./app_api/routes/indexApi'); // New routes for the API
+
+const studiesandjobs = require('./app_server/routes/studiesandjobs');
+const hobbies = require('./app_server/routes/hobbies');
+const contact = require('./app_server/routes/contact');
 
 var app = express();
 
@@ -25,6 +29,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/api', apiRoutes); // All API routes will start with '/api'
 app.use('/studiesandjobs', studiesandjobs);
 app.use('/hobbies', hobbies);
 app.use('/contact', contact);
