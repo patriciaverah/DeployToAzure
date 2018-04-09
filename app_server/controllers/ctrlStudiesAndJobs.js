@@ -1,5 +1,35 @@
-/* GET home page */
-var winnerlist = function(req, res){
+// Require the request module and the apiURL files
+const request = require('request');
+const apiURL = require('./apiURLs');
+
+const studiesandjobs = function(req, res) {
+    const path = '/api/studiesandjobs';
+    const requestOptions = {
+        url : apiURL.server + path,
+        method : 'GET',
+        json : {},
+        qs : {}
+    };
+
+    request (
+        requestOptions,
+        function (err, response, body) {
+            if (err) {
+                res.render('error', {message: err.message});
+            } else if (response.statusCode !== 200) {
+                res.render('error', {message: 'Error accessing API: ' + response.statusMessage + " (" + response.statusCode + ")"});
+            } else if (!(body instanceof Array)) {
+                res.render('error', {message: 'Unexpected response data'});
+            } else if (!body.length) {
+                res.render('error', {message: 'No documents in collection'});
+            } else {
+                res.render('studiesandjobs', {studiesandjobs: body});
+            }
+        }
+    );
+}
+
+/*var winnerlist = function(req, res){
     res.render('studiesandjobs',{
         winners:
         [
@@ -16,7 +46,8 @@ var winnerlist = function(req, res){
         link: 'https://www.stradivarius.com/',
         link2: 'https://www.elcorteingles.es/',
         link3: 'https://geoactio.com/#home'});
-};
+};*/
+
 module.exports = {
-    winnerlist
+    studiesandjobs
 };

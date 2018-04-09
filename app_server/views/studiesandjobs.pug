@@ -3,9 +3,9 @@ extends layout
 block content
   h1= 'Studies and Jobs'
   ul
-    each winner in winners
-      li= winner.category + ', ' + winner.year + ': ' + winner.what
+    each snj in studiesandjobs
+      if snj.link === ''
+        li= snj.category + ', ' + snj.year + ': ' + snj.what
+      else
+        li= snj.category + ', ' + snj.year + ': ' + snj.what + ' -> ' + #[a(href = snj.link) Visit its website]
 
-  p Stradivarius' website: #[a(href = link) Stradivarius]
-  p El Corte Inglés' website: #[a(href = link2) El Corte Inglés]
-  p GeoActio's website: #[a(href = link3) GeoActio]
