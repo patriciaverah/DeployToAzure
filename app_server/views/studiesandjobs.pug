@@ -7,5 +7,5 @@ block content
       if snj.link === ''
         li= snj.category + ', ' + snj.year + ': ' + snj.what
       else
-        li: snj.category + ', ' + snj.year + ': ' + snj.what + ' -> ' + [a(href = snj.link) Visit its website]
+        li= snj.category + ', ' + snj.year + ': ' + snj.what + ' -> ' + a(href = snj.link) Visit its website
 
