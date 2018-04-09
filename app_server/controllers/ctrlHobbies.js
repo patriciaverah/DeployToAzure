@@ -39,5 +39,5 @@ const hobbies = function(req, res) {
 };*/
 
 module.exports = {
-    winnerlist
+    hobbies
 };

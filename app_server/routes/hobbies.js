@@ -4,6 +4,6 @@ var router = express.Router();
 var ctrlHobbies = require('../controllers/ctrlHobbies');
 
 /* GET home page. */
-router.get('/', ctrlHobbies.winnerlist);
+router.get('/', ctrlHobbies.hobbies);
 
 module.exports = router;
