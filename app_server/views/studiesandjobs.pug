@@ -4,8 +4,5 @@ block content
   h1= 'Studies and Jobs'
   ul
     each snj in studiesandjobs
-      if snj.link === ''
         li= snj.category + ', ' + snj.year + ': ' + snj.what
-      else
-        li= snj.category + ', ' + snj.year + ': ' + snj.what + ' -> ' + a(href = snj.link) Visit its website
 
