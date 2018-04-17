@@ -1,0 +1,18 @@
+extends layout
+
+block content 
+    .row
+        h4 New studies or jobs
+    form(action="", method="post")
+        .form-group.row
+            label Category
+                input.form-control(name="category")
+        .form-group.row
+            label Year
+                input.form-control(name="year")
+        .form-group.row
+            label What study/job?
+                input.form-control(name="what")
+        .form-group.row
+            label Does it have a web page?
+                input.form-control(name="link")
