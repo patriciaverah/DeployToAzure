@@ -33,7 +33,7 @@ const studiesandjobs = function(req, res) {
     );
 };
 
-const addData = function(req, res){
+/*const addData = function(req, res){
     const path = 'api/studiesandjobs';
 
     const postdata = {
@@ -59,7 +59,7 @@ const addData = function(req, res){
             }
         }
     );
-};
+};*/
 
 /*var winnerlist = function(req, res){
     res.render('studiesandjobs',{
@@ -82,6 +82,5 @@ const addData = function(req, res){
 
 module.exports = {
     studiesandjobs,
-    showForm,
-    addData
+    showForm
 };
