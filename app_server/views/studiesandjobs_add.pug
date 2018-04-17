@@ -1,8 +1,8 @@
 extends layout
 
-block content 
+block content
     .row
-        h4 New studies or jobs
+        h4 New studies and jobs
     form(action="", method="post")
         .form-group.row
             label Category
@@ -13,8 +13,5 @@ block content
         .form-group.row
             label What study/job?
                 input.form-control(name="what")
-        .form-group.row
-            label Does it have a web page?
-                input.form-control(name="link")
         .form-group.row
             button.btn-primary Add
