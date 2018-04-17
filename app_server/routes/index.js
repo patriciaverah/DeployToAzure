@@ -9,7 +9,7 @@ const ctrlStudiesandjobs = require('../controllers/ctrlStudiesAndJobs');
 router.get('/', ctrlMain.index); // Home page
 
 router
-    .route('/studiesandjobs/app')
+    .route('/studiesandjobs/add')
     .get(ctrlStudiesandjobs.showForm)   // Display form
     .post(ctrlStudiesandjobs.addData);  // Get form dara and make API call
 
