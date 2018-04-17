@@ -2,9 +2,9 @@
 const request = require('request');
 const apiURL = require('./apiURLs');
 
-/* const showForm = function(req, res) {
+const showForm = function(req, res) {
     res.render('studiesandjobs_add');
-}; */
+};
 
 const studiesandjobs = function(req, res) {
     const path = '/api/studiesandjobs';
@@ -33,7 +33,7 @@ const studiesandjobs = function(req, res) {
     );
 };
 
-/*const addData = function(req, res){
+const addData = function(req, res){
     const path = 'api/studiesandjobs';
 
     const postdata = {
@@ -59,7 +59,7 @@ const studiesandjobs = function(req, res) {
             }
         }
     );
-};*/
+};
 
 /*var winnerlist = function(req, res){
     res.render('studiesandjobs',{
@@ -82,6 +82,6 @@ const studiesandjobs = function(req, res) {
 
 module.exports = {
     studiesandjobs,
-    // showForm,
-    // addData
+    showForm,
+    addData
 };
