@@ -2,9 +2,9 @@
 const request = require('request');
 const apiURL = require('./apiURLs');
 
-const showForm = function(req, res) {
+/*const showForm = function(req, res) {
     res.render('studiesandjobs_add');
-};
+};*/
 
 const studiesandjobs = function(req, res) {
     const path = '/api/studiesandjobs';
@@ -81,6 +81,5 @@ const studiesandjobs = function(req, res) {
 };*/
 
 module.exports = {
-    studiesandjobs,
-    showForm
+    studiesandjobs
 };
