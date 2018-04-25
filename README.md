@@ -19,3 +19,6 @@ Last but not least, in the upper menu user can find the **Contact** image and by
 
 ## Credits
 I made the web page by myself in the "Web App Development with MEAN" course at university. 
+
+## License
+MIT License.
