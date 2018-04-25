@@ -8,6 +8,13 @@ It is developed making use of Microsoft Azure as server and MLab as databse.
 It is developed using .pug and .js files.
 You can access the web page with this link: https://verahernandez-patricia.azurewebsites.net/
 
+## Installation
+For installing the project, you must install first Node in your computer (recommended the LTS version). 
+You can install the GitHub Desktop app if you feel like it - then you will have to set up the enviroment to commit the code changes. 
+You will also have to install Express.
+
+You can try the webpage locally by entering localhost:3000 on the web browser after changes.
+
 ## Usage
 When opening the web page, the user starts in the **home page**. In there, user can see what's the page about and can access to the GitHub repository. 
 
