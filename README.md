@@ -16,13 +16,9 @@ You will also have to install Express.
 You can try the webpage locally by entering localhost:3000 on the web browser after changes.
 
 ## Usage
-When opening the web page, the user starts in the **home page**. In there, user can see what's the page about and can access to the GitHub repository. 
+When opening the web page, the user can navigate through the different sections making use of the upper menu - user have access to **Studies and jobs** page, **Hobbies** page and **Contact** page.
 
-In the upper menu, user can find the **Studies and Jobs** page link, where the web shows a list of my education and work experiences. In this page, user can also access an aditional page to add studies or jobs to the database. 
-
-Also in the upper menu, user can find the **Hobbies** page link, where it is shown the contests that I have participated in. I also added some basic hobbies information about myself.
-
-Last but not least, in the upper menu user can find the **Contact** image and by clicking it the contact page appears. In it, user can find email to contact me. 
+In the first of those pages, user can access to an additional page where he/she can add new studies or jobs.
 
 ## Credits
 I made the web page by myself in the "Web App Development with MEAN" course at university. 
